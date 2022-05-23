@@ -1,0 +1,84 @@
+:root {
+    --primarycolor: rgb(34, 96, 34);
+    --secondarycolor: rgb(76, 255, 0);
+    --tertiarycolor: rgb(68, 4, 28);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*HEADER*/
+header {
+    padding: 30px 35px;
+    background-color: var(--tertiarycolor);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    background-image: url(../img/hero.png);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    z-index: 9999; 
+}
+
+header h1 {
+    font-weight: bolder;
+    font-size: 38px;
+    margin: 0;
+    text-shadow: 0 0 13px rgba(75, 58, 104, 0.865);
+}
+
+header a {
+    text-decoration: none;
+    margin: 7px 0;
+    color:var(--primarycolor);
+}
+
+header a:hover {
+    background: var(--tertiarycolor);
+    color: var(--secondarycolor);
+    border-radius: 20px;
+    padding: 7px;
+    font-weight: lighter;
+    text-shadow: none;
+}
+
+header nav {
+    margin: 7px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: auto 0;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.9vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: var(--tertiarycolor);
+    color: var(--secondarycolor);
+    border-radius: 15px;
+    font-weight: bold;
+    text-shadow: none;
+}
+/*HEADER ENDS*/
