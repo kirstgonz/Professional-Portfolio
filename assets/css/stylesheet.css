@@ -1,6 +1,6 @@
 :root {
     --primarycolor: rgb(34, 96, 34);
-    --secondarycolor: rgb(76, 255, 0);
+    --secondarycolor: rgb(0, 255, 132);
     --tertiarycolor: rgb(68, 4, 28);
 }
 
@@ -8,7 +8,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+img {
+    width: 200px;
+    height: 200px;
 }
 
 body {
@@ -25,6 +29,13 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+/*h2*/
+.h2 {
+    display: flex;
+    justify-content: center;
+}
+/*h2 ENDS*/
 
 /*HEADER*/
 header {
@@ -83,7 +94,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: bold;
-    font-size: 1.9vw;
+    font-size: 1.7vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -98,7 +109,7 @@ header nav ul li a:hover {
 
 /*HERO*/
 .hero {
-    padding: 49px 48.922px 12px 60px;
+    padding: 0px 48.922px 50px 60px;
     margin-bottom: 20px;
     padding-left: 500px;
     background-image: url(../img/hero.jpg);
@@ -108,8 +119,6 @@ header nav ul li a:hover {
 }
 
 .hero h2 {
-    transform-origin: center;
-    transform: rotate(7deg);
     display: flex;
     flex-wrap: wrap;
 }
@@ -122,7 +131,7 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     display: inline;
-    background-color: red;
+    margin-bottom: 200px;
 }
 
 .aboutme img {
@@ -131,13 +140,6 @@ header nav ul li a:hover {
     object-fit: contain;
     border-radius: 5px;
     margin: 0 0 0 150px;
-}
-
-.aboutme h2 {
-    float: right;
-    position: relative;
-    right: 500px;
-    margin: 30px auto auto auto;
 }
 
 .aboutme p {
@@ -152,4 +154,99 @@ header nav ul li a:hover {
 /*ABOUT ME ENDS*/
 
 /*MY PROJECTS*/
-.
+/*RUNBUDDY*/
+.runbuddy {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 25px;
+    justify-content: center;
+}
+
+.runbuddy h3 {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    margin: 200px 200px 200px 200px;
+}
+
+/*.runbuddy a img {
+    display: block;
+    right: 100px;
+}*/
+
+#rbimg {
+    width: 300px;
+    height: 300px;
+}
+
+.placeholder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.phimg {
+    max-width: 100%;
+}
+
+/*.phimg {
+    text-align: center;
+    max-width: 50%;
+    max-height: 50%;
+    overflow: hidden;
+}*/
+/*RUNBUDDY ENDS*/
+
+/*PLACEHOLDER*/
+
+/*PLACEHOLDER ENDS*/
+
+/*CONTACT ME*/
+.contact form {
+    color: var(--secondarycolor);
+    padding: 20px;
+    background-color: var(--tertiarycolor);
+    border: solid 3px var(--secondarycolor);
+    width: 32%;
+    margin: 3.5%;
+    border-radius: 21px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+.contact input, .contact textarea {
+    border: 2px solid var(--tertiarycolor);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--tertiarycolor);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(217, 255, 221, 0.75);
+  }
+
+  .contact input:focus, .contact textarea:focus {
+    background-color: rgb(185, 255, 197);
+  }
+  
+  .contact button {
+    width: 100%;
+    border: none;
+    background: rgb(89, 124, 103);
+    color: var(--secondarycolor);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 22px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .contact button:hover {
+      color: var(--tertiarycolor);
+      background: var(--secondarycolor);
+  }
+/*CONTACT ME ENDS*/
