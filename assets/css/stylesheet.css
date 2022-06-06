@@ -34,7 +34,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
 /*h2 ENDS*/
 
 /*HEADER*/
@@ -98,7 +97,6 @@ header nav ul li a:hover {
     font-weight: lighter;
     text-shadow: none;
 }
-
 /*HEADER ENDS*/
 
 /*HERO*/
@@ -205,7 +203,7 @@ header nav ul li a:hover {
 }
 /*PLACEHOLDER ENDS*/
 
-/*CONTACT ME*/
+/*FOOTER/CONTACT ME*/
 #contact-me {
     margin-top: 5%;
 }
@@ -265,26 +263,107 @@ header nav ul li a:hover {
     background: var(--secondarycolor);
     font-weight: lighter;
 }
-
-/*CONTACT ME ENDS*/
+/*FOOTER/CONTACT ME ENDS*/
 
 /*MEDIAQUERIES*/
 /*Media query for smaller desktop screens and smaller*/
 @media screen and (max-width: 980px) {
     /*HEADER*/
     header h1 {
-        width: 10%;
+        width: 100%;
         font-size: 130%;
+        text-align: center;
     }
 
     header nav ul {
         margin-top: 20px;
+        margin-left: 20%;
         width: 100%;
     }
 
     header nav ul li a {
         font-size: 120%;
-        text-align: left;
+        text-align: right;
     }
     /*HEADER ENDS*/
+
+    /* FOOTER/CONTACT ME */
+    .contact form {
+        width: 50%;
+        margin: 4.5%;
+    }
+    /* FOOTER/CONTACT ME ENDS*/
+}
+
+/*Media query for tablets and smaller*/
+@media screen and (max-width: 768px) {
+    /*HEADER*/
+    header nav ul {
+    }
+
+    header nav ul li a {
+        font-size: 115%;
+        display:flex;
+        flex-wrap: wrap;
+        position: static;
+    }
+    /*HEADER ENDS*/
+
+    /*HERO*/
+    .hero h2 {
+        font-size: 111%;
+        padding-top: 10px;
+        display: inline-block;
+        white-space: nowrap;
+        position: relative;
+        right: 300px;
+    }
+    /* HERO ENDS */
+
+    /*ABOUT ME*/
+    .aboutme img {
+        margin-top: 15px; 
+        margin-left: 175px;
+        width: 350px;
+        height: 400px;
+    }
+
+    .am {
+        position: static;
+    }
+    /* ABOUT ME ENDS */
+}
+
+/*Media query for mobile phones and smaller*/
+@media screen and (max-width: 575px) {
+       /*HEADER*/
+
+    header nav ul {
+        justify-content: space-evenly;
+    }
+
+    header nav ul li a {
+        font-size: 105%;
+        padding: 10px;
+    }
+    /*HEADER ENDS*/
+
+    /*HERO*/
+    .hero h2 {
+        font-size: 109%;
+    }
+    /* HERO ENDS */
+
+    /*ABOUT ME*/
+    .aboutme img {
+        margin-top: 75px;
+    }
+    /* ABOUT ME ENDS */
+
+    /* FOOTER/CONTACT ME */
+    .contact form {
+        width: 70%;
+        margin: 4%;
+    }
+    /* FOOTER/CONTACT ME ENDS*/
 }
