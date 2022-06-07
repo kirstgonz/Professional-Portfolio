@@ -21,11 +21,11 @@ My portfolio serves as a single place in which my works can easily and readily b
 
 - https://kirstgonz.github.io/Professional-Portfolio/
 
-![My website](assets/images/page-sc.png)
+![My website](assets/img/page-sc.png)
 
 Below is an example of implimenting media queries. Pictured are two of the media queries for smaller screens.
 
-![CSS media queries in my code](assets/images/horiseon-code.png)
+![CSS media queries in my code](assets/img/code-sc.png)
 
 
 ## Credits
